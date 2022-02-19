@@ -15,31 +15,40 @@ const highLightMenu = () =>{
     const homeMenu = document.querySelector('#home-page');
     const aboutMenu = document.querySelector('#about-page');
     const solutionsMenu = document.querySelector('#solutions-page');
+    const teamMenu = document.querySelector('#team-page');
 
     let scrollPosition = window.scrollY;
     //console.log(scrollPosition);
 
     // adds 'highlight' class to the menu items
 
-    if (window.innerWidth  > 960 && scrollPosition < 600){
-        aboutMenu.classList.remove('highlight');
-        homeMenu.classList.add('highlight');
-        return; 
-    }
-    else if (window.innerWidth  > 960 && scrollPosition < 1400){
-        homeMenu.classList.remove('highlight');
-        solutionsMenu.classList.remove('highlight');
-        aboutMenu.classList.add('highlight');
-        return; 
-    }
-    else if (window.innerWidth  > 960 && scrollPosition < 2345){
-        aboutMenu.classList.remove('highlight');
-        solutionsMenu.classList.add('highlight');
-        return; 
-    }
+    if ( document.URL.includes("index.html") ) {
+        if (window.innerWidth  > 960 && scrollPosition < 600){
 
-    if((elem && window.innerWidth < 960 && scrollPosition <600) || elem){
-        elem.classList.remove('highlight');
+            aboutMenu.classList.remove('highlight');
+            homeMenu.classList.add('highlight');
+            return; 
+        }
+        else if (window.innerWidth  > 960 && scrollPosition < 1400){
+ 
+            homeMenu.classList.remove('highlight');
+            solutionsMenu.classList.remove('highlight');
+            aboutMenu.classList.add('highlight');
+            return; 
+        }
+        else if (window.innerWidth  > 960 && scrollPosition < 2345){
+
+            aboutMenu.classList.remove('highlight');
+            solutionsMenu.classList.add('highlight');
+            return; 
+        }
+
+        if((elem && window.innerWidth < 960 && scrollPosition <600) || elem){
+
+            elem.classList.remove('highlight');
+        }
+    }else if (document.URL.includes("team.html")){
+        teamMenu.classList.add('highlight');
     }
 }
 
