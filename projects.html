@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh%20Sans"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://kit.fontawesome.com/14542f9787.js" crossorigin="anonymous"></script>
+    <title>SigmaDews</title>
+    <link rel="shortcut icon" type="image/jpg" href="/img/sigmadews_logo_vertical_dark.jpg"/>
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">
+                <img id="logo1" src="/img/sigmadews_logo_horizontal_white.svg" alt="SigmaDews logo" />
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#solutions" class="navbar__links" id="solutions-page">Solutions</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="team.html" class="navbar__links" id="team-page">Team</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="signup">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero" id="projects">
+        <div class="hero__container">
+            <h1 class="hero__heading">Our <span>projects</span></h1>
+            <p class="hero__description">Diverse portfolio of our work.</p>
+        </div>
+    </div>
+
+    <!-- Web apps Section-->
+    <div class="main" id="web-apps">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card--pro project__card">
+                    <img src="img/prikaz_meritev.png" alt="measurements">
+                </div>
+            </div>
+
+
+            <div class="main__content">
+                <h1>Web Applications</h1>
+                <h2>HF Measurement System</h2>
+                <p>High frequency acceleration measurements streaming into the custom made 
+                    web application.
+                </p>
+                <br>
+                <p>#MQTT</p>
+                <p>#django</p>
+                <p>#redis</p>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- IoT Section -->
+    <div class="main" id="iot">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>IoT solutions</h1>
+                <h2>Remote Machine Control</h2>
+                <p>Firmware on the edge devices and connection to the IoT Cloud platform. 
+                    Separate data storage and analytics flow created using InfluxDB, Grafana and Node-Red.</p>
+                    <br>
+                <p>#Grafana</p>
+                <p>#InfluxDB</p>
+                <p>#Docker</p>
+
+                
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card--pro ">
+                    <img src="img/idb-grafana-nr.jpg" alt="iot-stack">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Prototypes Section-->
+    <div class="main" id="poc">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card--pro ">
+                    <img src="img/IMG_1644a.jpg" alt="dgc-scanner">
+                </div>
+            </div>
+
+
+            <div class="main__content">
+                <h1>Prototypes and hardware</h1>
+                <h2>DGC and ID scanner</h2>
+                <p>EU Covid QR code scanner device with OCR for personal ID check. We've created a device from scratch to the 
+                    final product in 1 month. We've developed housing, PCB and software for the device.
+                </p>
+                <br>
+                <p>#openCV</p>
+                <p>#3D-print</p>
+                <p>#PCB-design</p>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Engineering Section -->
+    <div class="main" id="engineering">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Engineering</h1>
+                <h2>Machine contruction</h2>
+                <p>We've created a 3D model of the machine, draw electrical schematics for control system and wrote the firmware.</p>
+                <br>
+                <p>#Solidworks</p>
+                <p>#Eplan</p>
+                <p>#programming</p>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card--pro ">
+                    <img src="img/zaboj-na-prijemalu.jpg" alt="dgc-scanner">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="contact">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Want to hear more?</h1>
+                <h2>Let's talk</h2>
+                <p>Ask us anything about our work.</p>
+                
+            </div>
+
+            
+
+            <div class="main__img--container">
+                <div class="main__img--card" id="contact-form">
+                    <form
+                class="contact__container"
+                action="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="Ime:" required="required" />
+                      <span class="text">First Name:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="Priimek:" required="required" />
+                      <span class="text">Last Name:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="Email:" required="required" />
+                      <span class="text">Email:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox textarea">
+                      <textarea required="required" name="Sporočilo"></textarea>
+                      <span class="text sporocilo">Describe your idea:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row100" style="display: none">
+                  <div class="col">
+                    <label
+                      >Don’t fill this out if you're human:
+                      <input name="bot-field"
+                    /></label>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="col">
+                    <input class="main__btn" type="submit" value="Send Your Question" />
+                  </div>
+                </div>
+              </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Company information</h2>
+                    <p>SigmaDews, inženirske in programerske storitve, Gregor Obreza s.p.</p>
+                    <p>Selšček 8, 1382 Begunje pri Cerknici</p>
+                    <p>Davčna številka: 15100464</p>
+                    <p>Matična številka: 8964734000</p>
+                    
+                </div>
+                <div class="footer__link--items">
+                    <h2></h2>
+                    <a href="/contact-us"></a>
+                    <a href="/contact-us"></a>
+                    <a href="/contact-us"></a>
+                    <a href="/contact-us"></a>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">SigmaDews</a>
+                </div>
+                <p class="website__rights">SigmaDews 2022. All rights reserved.</p>
+                <div class="social__icons">
+                    <a href="https://www.linkedin.com/company/sigmadews" class="social__icon--link"><i class="fab fa-linkedin" target="_blank"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
