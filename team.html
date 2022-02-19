@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh%20Sans"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://kit.fontawesome.com/14542f9787.js" crossorigin="anonymous"></script>
+    <title>SigmaDews</title>
+    <link rel="shortcut icon" type="image/jpg" href="/img/sigmadews_logo_vertical_dark.jpg"/>
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">
+                <img id="logo1" src="/img/sigmadews_logo_horizontal_white.svg" alt="SigmaDews logo" />
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#solutions" class="navbar__links" id="solutions-page">Solutions</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="team.html" class="navbar__links" id="team-page">Team</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="signup">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero" id="team">
+        <div class="hero__container">
+            <h1 class="hero__heading">Meet Our <span>team</span></h1>
+            <p class="hero__description">We are a young team of technological enthusiasts.</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="experience">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card ">
+                    <i class="fas fa-rocket"></i>
+                </div>
+            </div>
+
+
+            <div class="main__content">
+                <h1>Experience</h1>
+                <h2>Can-do attitude</h2>
+                <p>We are a young company engaged in
+                    the development of technological
+                    solutions in the field of hardware and
+                    software.</p>
+                <p>Background in Mechanical and Electrical Engineering gives us understanding of the real life projects.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team" id="team">
+        <h1>Our Team</h1>
+        <div class="team__wrapper">
+            <div class="team__card">
+                <div class="team__img team__img--gregor">
+
+                </div>
+                <h2>Gregor</h2>
+                <p>CEO, responsible for mechanical engineering and software development. Gregor's experience is from machine construction design and web development.</p>
+            
+            </div>
+            <div class="team__card">
+                <div class="team__img team__img--jure">
+
+                </div>
+                <h2>Jure</h2>
+                <p>CTO, responsible for electrical engineering and IoT development. Jure previously worked in the field of industrial automation
+                    and development of connected machines.
+                </p>
+
+            </div> 
+        </div>
+    </div>
+
+    <!-- Partnership Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Partnership</h1>
+                <h2>We value Partnership and Collaboration</h2>
+                <p>When needed, we collaborate with our business partners to successfully deliver the project.</p>
+                <button class="main__btn"><a href="#contact">Get In Touch</a></button>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card ">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="contact">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Want to meet us?</h1>
+                <h2>Let's talk</h2>
+                <p>Tell us more about you and let's meet for a coffee.</p>
+                
+            </div>
+
+            
+
+            <div class="main__img--container">
+                <div class="main__img--card" id="contact-form">
+                    <form
+                class="contact__container"
+                action="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="Ime:" required="required" />
+                      <span class="text">First Name:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="Priimek:" required="required" />
+                      <span class="text">Last Name:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="Email:" required="required" />
+                      <span class="text">Email:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox textarea">
+                      <textarea required="required" name="Sporočilo"></textarea>
+                      <span class="text sporocilo">Describe your idea:</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row100" style="display: none">
+                  <div class="col">
+                    <label
+                      >Don’t fill this out if you're human:
+                      <input name="bot-field"
+                    /></label>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="col">
+                    <input class="main__btn" type="submit" value="Send Your Question" />
+                  </div>
+                </div>
+              </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Company information</h2>
+                    <p>SigmaDews, inženirske in programerske storitve, Gregor Obreza s.p.</p>
+                    <p>Selšček 8, 1382 Begunje pri Cerknici</p>
+                    <p>Davčna številka: 15100464</p>
+                    <p>Matična številka: 8964734000</p>
+                    
+                </div>
+                <div class="footer__link--items">
+                    <h2></h2>
+                    <a href="/contact-us"></a>
+                    <a href="/contact-us"></a>
+                    <a href="/contact-us"></a>
+                    <a href="/contact-us"></a>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">SigmaDews</a>
+                </div>
+                <p class="website__rights">SigmaDews 2022. All rights reserved.</p>
+                <div class="social__icons">
+                    <a href="https://www.linkedin.com/company/sigmadews" class="social__icon--link"><i class="fab fa-linkedin" target="_blank"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
