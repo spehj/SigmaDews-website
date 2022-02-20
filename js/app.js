@@ -21,8 +21,15 @@ const highLightMenu = () =>{
     //console.log(scrollPosition);
 
     // adds 'highlight' class to the menu items
+        if (document.URL.includes("team.html")){
+            teamMenu.classList.add('highlight');
+            aboutMenu.classList.remove('highlight');
+            homeMenu.classList.remove('highlight');
+            solutionsMenu.classList.remove('highlight');
 
-    if ( document.URL.includes("index.html") ) {
+        }else{
+
+        
         if (window.innerWidth  > 960 && scrollPosition < 600){
 
             aboutMenu.classList.remove('highlight');
@@ -47,9 +54,9 @@ const highLightMenu = () =>{
 
             elem.classList.remove('highlight');
         }
-    }else if (document.URL.includes("team.html")){
-        teamMenu.classList.add('highlight');
     }
+
+    
 }
 
 window.addEventListener('scroll', highLightMenu);
