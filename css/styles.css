@@ -853,6 +853,7 @@
     text-decoration: none;
     margin-bottom: 0.5rem;
     cursor: default;
+    margin-right: 2rem;
 }
 
 .footer__link--items p:hover{
