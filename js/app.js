@@ -27,7 +27,14 @@ const highLightMenu = () =>{
             homeMenu.classList.remove('highlight');
             solutionsMenu.classList.remove('highlight');
 
-        }else{
+        }else if (document.URL.includes("projects.html")){
+            teamMenu.classList.remove('highlight');
+            aboutMenu.classList.remove('highlight');
+            homeMenu.classList.remove('highlight');
+            solutionsMenu.classList.remove('highlight');
+        }
+        else
+        {
 
         
         if (window.innerWidth  > 960 && scrollPosition < 600){
