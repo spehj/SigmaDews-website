@@ -806,7 +806,7 @@
 /* Footer */
 .footer__container{
     background-color: #131313;
-    padding: 5rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1028,7 +1028,7 @@
 }
 
 .team__card .team__img--jure{
-    background-image: url("/img/Jure_image.PNG");
+    background-image: url("/img/Jure_image.jpg");
   background-position: center;
   background-size: cover;
   background-position: top;
