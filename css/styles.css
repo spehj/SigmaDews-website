@@ -1078,14 +1078,19 @@
 
 @media screen and(max-width: 480px) {
     .main__img--card--pro{
-        width: 100px;
-        height: 100px;
+        width: 100%;
 
+    }
+    .main__img--card--pro img{
+        width: 100%;
     }
 }
 @media screen and (max-width: 1100px){
     .main__img--card--pro{
-        height: 300px;
-        width: 300px;
+        width: 100%;
+    }
+
+    .main__img--card--pro img{
+        width: 100%;
     }
 }
