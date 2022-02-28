@@ -37,20 +37,20 @@ const highLightMenu = () =>{
         {
 
         
-        if (window.innerWidth  > 960 && scrollPosition < 600){
+        if (window.innerWidth  > 960 && scrollPosition < 1200){
 
             aboutMenu.classList.remove('highlight');
             homeMenu.classList.add('highlight');
             return; 
         }
-        else if (window.innerWidth  > 960 && scrollPosition < 1400){
+        else if (window.innerWidth  > 960 && scrollPosition < 1900){
  
             homeMenu.classList.remove('highlight');
             solutionsMenu.classList.remove('highlight');
             aboutMenu.classList.add('highlight');
             return; 
         }
-        else if (window.innerWidth  > 960 && scrollPosition < 2345){
+        else if (window.innerWidth  > 960 && scrollPosition < 2700){
 
             aboutMenu.classList.remove('highlight');
             solutionsMenu.classList.add('highlight');
